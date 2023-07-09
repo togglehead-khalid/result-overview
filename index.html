@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/css/bootstrap.css"
+      rel="stylesheet"
+      
+    />
+    <title>Result Overview</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Hanken Grotesk", sans-serif;
+      }
+      .left-column {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 2rem;
+      }
+      .circle {
+        height: 200px;
+        width: 200px;
+        background: linear-gradient(
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+      }
+      .text-gray{
+        color: #dad4ff;
+      }
+
+      .continue-btn:hover{
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border:none;
+      }
+
+      /* for desktops */
+      @media (min-width:768px) {
+       .wrapper{
+        height: 100vh;
+       }
+      }
+      /* for mobiles */
+      @media (max-width:768px) {
+        .left-column{
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper d-flex justify-content-center align-items-center " >
+      <div class="container shadow-lg rounded-5 my-md-5" style="max-width: 750px;">
+        <div class="row">
+          <div class="col-md-6  left-column text-center py-5">
+            <p class="your-result text-gray fs-4 fw-bold">Your Result</p>
+            <div class="circle rounded-circle text-center mx-auto d-flex justify-content-center align-items-center mt-4">
+              <div>
+                <p class="obtained text-white display-2 fw-bold mb-0">76</p>
+                <p class="out-of text-gray fs-6">of 100</p>
+              </div>
+            </div>
+            <div class="content-wrapper">
+              <p class="title text-white fs-3 fw-semibold mt-4 mb-2">Great</p>
+              <p class="description text-gray fs-6 mx-auto w-75">
+                Your scored higher thank 65% of the people who have taken these
+                tests
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 py-5 px-5 rounded-5">
+            <p class="title text-dark-blue fw-bold fs-5">Summary</p>
+            <div class="list">
+              <div class=" bg-danger bg-opacity-10 rounded d-flex justify-content-between p-3 mb-3">
+                <div class="label">
+                  <img src="assets/images/icon-reaction.svg" alt="" />
+                  <span class="text-danger-500 fw-bold text-opacity-100">Reaction</span>
+                </div>
+                <div class="marks">
+                  <span class="obtained-mark text-dark-blue fw-bold">80</span> 
+                  <span class="total-mark text-secondary fw-bold">/ 100</span>
+                </div>
+              </div>
+              <div class=" bg-warning bg-opacity-10 rounded d-flex justify-content-between p-3 mb-3">
+                <div class="label">
+                  <img src="assets/images/icon-memory.svg" alt="" />
+                  <span class="text-warning fw-bold text-opacity-100">Memory</span>
+                </div>
+                <div class="marks">
+                  <span class="obtained-mark text-dark-blue fw-bold">92</span> 
+                  <span class="total-mark text-secondary fw-bold">/ 100</span>
+                </div>
+              </div>
+              <div class=" bg-success bg-opacity-10 rounded d-flex justify-content-between p-3 mb-3">
+                <div class="label">
+                  <img src="assets/images/icon-verbal.svg" alt="" />
+                  <span class="text-teal fw-bold text-opacity-100">Verbal</span>
+                </div>
+                <div class="marks">
+                  <span class="obtained-mark text-dark-blue fw-bold">61</span> 
+                  <span class="total-mark text-secondary fw-bold">/ 100</span>
+                </div>
+              </div>
+              <div class=" bg-blue bg-opacity-10 rounded d-flex justify-content-between p-3 mb-3">
+                <div class="label">
+                  <img src="assets/images/icon-visual.svg" alt="" />
+                  <span class="text-blue fw-bold text-opacity-100">Visual</span>
+                </div>
+                <div class="marks">
+                  <span class="obtained-mark text-dark-blue fw-bold">72</span> 
+                  <span class="total-mark text-secondary fw-bold">/ 100</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-dark-blue rounded-pill w-100 py-2 fs-5 mt-4 continue-btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
